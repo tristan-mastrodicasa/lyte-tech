@@ -28,9 +28,35 @@
               "src/assets"
             ],
             "styles": [
-              "src/global.scss"
+              "src/global.scss",
+              "src/assets/cohost/css/open-iconic-bootstrap.min.css",
+              "src/assets/cohost/css/animate.css",
+              "src/assets/cohost/css/owl.carousel.min.css",
+              "src/assets/cohost/css/owl.theme.default.min.css",
+              "src/assets/cohost/css/magnific-popup.css",
+              "src/assets/cohost/css/aos.css",
+              "src/assets/cohost/css/ionicons.min.css",
+              "src/assets/cohost/css/bootstrap-datepicker.css",
+              "src/assets/cohost/css/jquery.timepicker.css",
+              "src/assets/cohost/css/flaticon.css",
+              "src/assets/cohost/css/icomoon.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/cohost/js/jquery.min.js",
+              "src/assets/cohost/js/jquery-migrate-3.0.1.min.js",
+              "src/assets/cohost/js/popper.min.js",
+              "src/assets/cohost/js/bootstrap.min.js",
+              "src/assets/cohost/js/jquery.easing.1.3.js",
+              "src/assets/cohost/js/jquery.waypoints.min.js",
+              "src/assets/cohost/js/jquery.stellar.min.js",
+              "src/assets/cohost/js/owl.carousel.min.js",
+              "src/assets/cohost/js/jquery.magnific-popup.min.js",
+              "src/assets/cohost/js/aos.js",
+              "src/assets/cohost/js/jquery.animateNumber.min.js",
+              "src/assets/cohost/js/bootstrap-datepicker.js",
+              "src/assets/cohost/js/scrollax.min.js",
+              "src/assets/cohost/js/google-map.js"
+            ]
           },
           "configurations": {
             "production": {
