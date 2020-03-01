@@ -7,7 +7,7 @@ $white: #fff;
 $black: #000;
 // $darken: #3a4348;
 
-$primary: #3C99DC;
+$primary: #191ba9;
 $secondary: #38d39f;
 
 
@@ -290,6 +290,10 @@ h1, h2, h3, h4, h5,
 .navbar-brand {
 	font-size: 20px;
 	font-weight: 900;
+
+  img {
+    max-height: 40px;
+  }
 }
 
 
