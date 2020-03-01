@@ -1,13 +1,13 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 
-$font-primary: 'Work Sans',Arial, sans-serif;
+$font-primary: 'Gothic A1',Arial, sans-serif;
 
 $white: #fff;
 $black: #000;
 // $darken: #3a4348;
 
-$primary: #191ba9;
+$primary: #3C99DC;
 $secondary: #38d39f;
 
 
@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5,
 	font-weight: 900;
 
   img {
-    max-height: 40px;
+    max-height: 50px;
   }
 }
 
@@ -323,6 +323,9 @@ h1, h2, h3, h4, h5,
 		.one-third{
 			width: 60%;
 			position: relative;
+      padding: 120px;
+      padding-top: 160px;
+      padding-bottom: 100px;
 			// bordeR: 1px solid red;
 			.overlay{
 				position: absolute;
@@ -333,15 +336,12 @@ h1, h2, h3, h4, h5,
 				background: $black;
 				opacity: 0;
 			}
-			@include media-breakpoint-down(lg){
-				width: 100%;
-				z-index: 0;
-				.overlay{
-					opacity: .3;
-				}
-				&:after{
-					opacity: 0;
-				}
+      @include media-breakpoint-down(lg){
+        padding-top: 120px;
+				padding-bottom: 120px;
+			}
+      @include media-breakpoint-down(md){
+				display: none;
 			}
 		}
 		.one-forth{
