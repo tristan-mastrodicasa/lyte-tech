@@ -768,6 +768,12 @@ h1, h2, h3, h4, h5,
 			color: $white;
 		}
 	}
+  .red {
+    background-color: red !important;
+  }
+  .green {
+    background-color: green !important;
+  }
 	.media-body{
 		@include transition(.3s);
 		width: calc(100% - 80px);
@@ -787,6 +793,12 @@ h1, h2, h3, h4, h5,
 				color: $primary;
 			}
 		}
+    .red {
+      background-color: $white !important;
+    }
+    .green {
+      background-color: $white !important;
+    }
 		.media-body{
 			h3{
 				color: $white;
