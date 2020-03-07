@@ -66,14 +66,12 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light {
-	background: transparent!important;
+  background: $white!important;
 	position: absolute;
-	top: 20px;
 	left: 0;
 	right: 0;
-	z-index: 3;
+	z-index: 25;
 	@include media-breakpoint-down(md) {
-		background: $black!important;
 		position: relative;
 		top: 0;
 	}
@@ -275,10 +273,10 @@ h1, h2, h3, h4, h5,
 		}
 		&.awake {
 			margin-top: 0px;
-			transition: .3s all ease-out;
+			transition: .1s all ease-out;
 		}
 		&.sleep {
-			transition: .3s all ease-out;
+			transition: .1s all ease-out;
 		}
 
 		.navbar-brand {
@@ -437,13 +435,14 @@ h1, h2, h3, h4, h5,
 		background-repeat: no-repeat;
 		background-position: top center;
 		@include media-breakpoint-down(lg){
+      height: 300px !important;
 			background-position: top center !important;
 		}
 		.slider-text{
 			height: 600px !important;
-			@include media-breakpoint-down(md){
+			@include media-breakpoint-down(lg){
 				text-align: center;
-				height: 600px !important;
+				height: 300px !important;
 			}
 		}
 	}
