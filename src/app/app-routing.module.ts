@@ -6,6 +6,7 @@ import { ContactUsComponent } from './views/contact-us/contact-us.component';
 import { PortfolioComponent } from './views/portfolio/portfolio.component';
 import { ServicesComponent } from './views/services/services.component';
 import { AboutComponent } from './views/about/about.component';
+import { TermsComponent } from './views/terms/terms.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'terms', component: TermsComponent },
 ];
 
 @NgModule({

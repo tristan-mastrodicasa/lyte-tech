@@ -9,6 +9,7 @@ import { ContactUsComponent } from './views/contact-us/contact-us.component';
 import { PortfolioComponent } from './views/portfolio/portfolio.component';
 import { ServicesComponent } from './views/services/services.component';
 import { AboutComponent } from './views/about/about.component';
+import { TermsComponent } from './views/terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AboutComponent } from './views/about/about.component';
     PortfolioComponent,
     ServicesComponent,
     AboutComponent,
+    TermsComponent,
   ],
   imports: [
     BrowserModule,
