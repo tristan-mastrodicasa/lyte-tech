@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
   <div class="container">
     <a class="navbar-brand" routerLink="/"><img src="/assets/img/logos/logo-nav-bar.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="oi oi-menu"></span> Menu
     </button>
 
-    <div class="collapse navbar-collapse" id="ftco-nav">
+    <div class="collapse navbar-collapse d-none d-lg-block" id="ftco-nav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li>
         <li class="nav-item"><a routerLink="/about" class="nav-link">About</a></li>
@@ -15,19 +15,43 @@
         <li class="nav-item cta"><a routerLink="/contact" class="nav-link"><span>Get started</span></a></li>
       </ul>
     </div>
+
+    <div class="ml-auto d-lg-none mobile-links">
+      <a href="mailto:tristan@lytetech.co.nz"><span class="ion-md-mail"></span></a>
+      <a href="tel://0211044886"><span class="ion-md-call ml-5"></span></a>
+    </div>
   </div>
 </nav>
 <!-- END nav -->
 
 <router-outlet></router-outlet>
 
-<footer class="ftco-footer ftco-bg-dark ftco-section">
+<footer class="mobile-tabs">
+  <div class="container-fluid no-gutters d-print-none">
+    <div class="row mobile-fixed-nav d-lg-none">
+      <div routerLink="/" class="col pt-2 pb-2 border border-right-0 nuxt-link-exact-active nuxt-link-active">
+        <span class="ion-md-home l"></span>
+      </div>
+      <div routerLink="/about" class="col pt-2 pb-2 border border-right-0 nuxt-link-exact-active nuxt-link-active">
+        <span class="ion-md-person l"></span>
+      </div>
+      <div routerLink="/services" class="col pt-2 pb-2 border border-right-0 nuxt-link-exact-active nuxt-link-active">
+        <span class="ion-md-briefcase l"></span>
+      </div>
+      <div routerLink="/portfolio" class="col pt-2 pb-2 border border-right-0 nuxt-link-exact-active nuxt-link-active">
+        <span class="ion-md-albums l"></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<footer class="ftco-footer ftco-bg-dark ftco-section d-none d-lg-block">
   <div class="container">
   	<div class="row mb-5 pb-5 align-items-center d-flex">
   		<div class="col-md-9">
   			<div class="heading-section heading-section-white ftco-animate">
   				<span class="subheading">Get an easy quote</span>
-          <h2 style="font-size: 30px;">Take advantage of this new technology today!</h2>
+          <h2 style="font-size: 30px;">Take advantage of PWA technology today!</h2>
         </div>
   		</div>
   		<!-- <div class="col-md-3 ftco-animate">

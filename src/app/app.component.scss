@@ -1,0 +1,29 @@
+footer.mobile-tabs {
+  display: block;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+span.l {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2em;
+  height: 37px;
+  width: 100%;
+  fill: #22b9b6;
+
+  &:before {
+    position: relative;
+    top: -8px;
+  }
+}
+
+.mobile-links {
+  a > span {
+    font-size: 2em;
+  }
+}
