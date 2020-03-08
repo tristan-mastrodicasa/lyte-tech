@@ -10,6 +10,8 @@ import { PortfolioComponent } from './views/portfolio/portfolio.component';
 import { ServicesComponent } from './views/services/services.component';
 import { AboutComponent } from './views/about/about.component';
 import { TermsComponent } from './views/terms/terms.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from 'environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { TermsComponent } from './views/terms/terms.component';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent],
