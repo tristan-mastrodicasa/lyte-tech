@@ -151,8 +151,13 @@
               "devServerTarget": "lyte-tech:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "lyte-tech"
 }

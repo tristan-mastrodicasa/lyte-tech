@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "lyte-tech": {
+      "hosting": {
+        "lyte-tech": [
+          "lyte-tech"
+        ]
+      }
+    }
+  }
+}
