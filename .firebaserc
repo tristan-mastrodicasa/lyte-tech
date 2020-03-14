@@ -1,11 +1,6 @@
 {
-  "targets": {
-    "lyte-tech": {
-      "hosting": {
-        "lyte-tech": [
-          "lyte-tech"
-        ]
-      }
-    }
+  "projects": {
+    "live": "lyte-tech",
+    "stage": "lyte-tech-stage"
   }
 }
