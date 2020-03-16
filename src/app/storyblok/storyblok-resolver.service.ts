@@ -13,6 +13,5 @@ export class StoryblokResolverService implements Resolve<any> {
    */
   public async resolve(_route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<any> {
     return this.storyblokService.getStory(state.url.substring(1), { version: 'draft' });
-        // .then(data => this.story = data.story);
   }
 }

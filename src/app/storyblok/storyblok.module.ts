@@ -8,9 +8,7 @@ import { StoryblokService } from './storyblok.service';
 import { StoryblokResolverService } from './storyblok-resolver.service';
 import { StoryblokComponent } from './storyblok.component';
 import { PageComponent } from './views/page/page.component';
-import { TeaserComponent } from './components/teaser/teaser.component';
-import { GridComponent } from './components/grid/grid.component';
-import { FeatureComponent } from './components/feature/feature.component';
+import { CounterSectionComponent } from './components/counter-section/counter-section.component';
 
 const routes: Routes = [
   { path: '**', component: StoryblokComponent, resolve: { storyblok: StoryblokResolverService } },
@@ -21,22 +19,19 @@ const routes: Routes = [
     StoryblokDirective,
     StoryblokComponent,
     PageComponent,
-    TeaserComponent,
-    GridComponent,
-    FeatureComponent,
+    CounterSectionComponent,
   ],
   imports: [
     CommonModule,
     DynamicModule.withComponents([
       PageComponent,
-      TeaserComponent,
-      GridComponent,
-      FeatureComponent,
+      CounterSectionComponent,
     ]),
     RouterModule.forChild(routes),
   ],
   exports: [
     RouterModule,
+    StoryblokDirective,
   ],
   providers: [
     StoryblokService,
