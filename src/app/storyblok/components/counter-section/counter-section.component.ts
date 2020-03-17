@@ -10,6 +10,7 @@ import { main } from 'assets/cohost/js/main.js';
 })
 export class CounterSectionComponent implements AfterViewInit {
 
+  @Input() public _editable: any;
   @Input() public title: string;
   @Input() public counters: {
     initialQuantity: number;
@@ -18,7 +19,6 @@ export class CounterSectionComponent implements AfterViewInit {
     unitPosition: 'before' | 'after';
     description: string;
   }[];
-  @Input() public _editable: string;
 
   constructor() { }
 
