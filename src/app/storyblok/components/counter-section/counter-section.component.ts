@@ -1,6 +1,6 @@
 import { Component, Input, AfterViewInit, ViewEncapsulation } from '@angular/core';
 
-import { main } from 'assets/cohost/js/main.js';
+import { main } from 'assets/cohost/js/main';
 
 @Component({
   selector: 'lt-counter-section',
