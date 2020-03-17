@@ -1,0 +1,21 @@
+.trophy-example {
+  @media (max-width: 768px) {
+    padding: 2em;
+  }
+}
+
+.trophy-image {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 2em;
+  }
+}
+
+.reverse-row {
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+}
