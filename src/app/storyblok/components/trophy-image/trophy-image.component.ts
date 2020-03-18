@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
+import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { main } from 'assets/cohost/js/main';
 
 @Component({
@@ -8,7 +9,7 @@ import { main } from 'assets/cohost/js/main';
   styleUrls: ['./trophy-image.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class TrophyImageComponent implements OnInit {
+export class TrophyImageComponent extends StoryblokComponentAbstract implements OnInit {
 
   @Input() public _editable: any;
   @Input() public title: string;
@@ -16,7 +17,9 @@ export class TrophyImageComponent implements OnInit {
   @Input() public imageUrl: string;
   @Input() public imagePosition: 'left' | 'right';
 
-  constructor() { }
+  constructor() {
+    super();
+  }
 
   /**
    * Initialize

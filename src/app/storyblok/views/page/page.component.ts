@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
+import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { components } from 'app/storyblok/storyblok-component-index';
 
 @Component({
@@ -8,14 +9,15 @@ import { components } from 'app/storyblok/storyblok-component-index';
   styleUrls: ['./page.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class PageComponent implements OnInit {
+export class PageComponent extends StoryblokComponentAbstract implements OnInit {
 
   public components = components;
 
   @Input() public body: any[];
-  @Input() public _editable: any;
 
-  constructor() { }
+  constructor() {
+    super();
+  }
 
   /**
    * Initialize

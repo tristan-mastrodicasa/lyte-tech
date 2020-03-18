@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 
 import { DynamicModule } from 'ng-dynamic-component';
-import { StoryblokDirective } from './storyblok.directive';
 import { StoryblokService } from './storyblok.service';
 import { StoryblokResolverService } from './storyblok-resolver.service';
 import { StoryblokComponent } from './storyblok.component';
@@ -18,7 +17,6 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    StoryblokDirective,
     StoryblokComponent,
     PageComponent,
     CounterSectionComponent,
@@ -37,7 +35,6 @@ const routes: Routes = [
   ],
   exports: [
     RouterModule,
-    StoryblokDirective,
   ],
   providers: [
     StoryblokService,

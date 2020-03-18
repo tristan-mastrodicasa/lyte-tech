@@ -1,5 +1,6 @@
 import { Component, Input, AfterViewInit, ViewEncapsulation } from '@angular/core';
 
+import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { main } from 'assets/cohost/js/main';
 
 @Component({
@@ -8,7 +9,7 @@ import { main } from 'assets/cohost/js/main';
   styleUrls: ['./counter-section.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class CounterSectionComponent implements AfterViewInit {
+export class CounterSectionComponent extends StoryblokComponentAbstract implements AfterViewInit {
 
   @Input() public _editable: any;
   @Input() public title: string;
@@ -20,7 +21,9 @@ export class CounterSectionComponent implements AfterViewInit {
     description: string;
   }[];
 
-  constructor() { }
+  constructor() {
+    super();
+  }
 
   /**
    * Initialize
