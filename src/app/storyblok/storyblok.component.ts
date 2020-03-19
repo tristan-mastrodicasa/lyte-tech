@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { components } from './storyblok-component-index';
+import { mappedViews } from './views';
 
 import { first } from 'rxjs/operators';
 
@@ -13,7 +13,7 @@ import { first } from 'rxjs/operators';
 export class StoryblokComponent implements OnInit {
 
   public story = { content: null, name: '' };
-  public components = components;
+  public components = mappedViews;
 
   constructor(private route: ActivatedRoute) {
 

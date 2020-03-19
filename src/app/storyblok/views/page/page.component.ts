@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
-import { components } from 'app/storyblok/storyblok-component-index';
+import { mappedComponents } from 'app/storyblok/components';
 
 @Component({
   selector: 'lt-page',
@@ -11,7 +11,7 @@ import { components } from 'app/storyblok/storyblok-component-index';
 })
 export class PageComponent extends StoryblokComponentAbstract implements OnInit {
 
-  public components = components;
+  public components = mappedComponents;
 
   @Input() public body: any[];
 

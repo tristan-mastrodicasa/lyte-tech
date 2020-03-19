@@ -6,10 +6,9 @@ import { DynamicModule } from 'ng-dynamic-component';
 import { StoryblokService } from './storyblok.service';
 import { StoryblokResolverService } from './storyblok-resolver.service';
 import { StoryblokComponent } from './storyblok.component';
-import { PageComponent } from './views/page/page.component';
-import { CounterSectionComponent } from './components/counter-section/counter-section.component';
-import { HeroImageHeaderComponent } from './components/hero-image-header/hero-image-header.component';
-import { TrophyImageComponent } from './components/trophy-image/trophy-image.component';
+
+import { components } from './components'; // Storyblok components
+import { views } from './views'; // Storyblok views
 
 const routes: Routes = [
   { path: '**', component: StoryblokComponent, resolve: { storyblok: StoryblokResolverService } },
@@ -18,18 +17,14 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     StoryblokComponent,
-    PageComponent,
-    CounterSectionComponent,
-    HeroImageHeaderComponent,
-    TrophyImageComponent,
+    ...components,
+    ...views,
   ],
   imports: [
     CommonModule,
     DynamicModule.withComponents([
-      PageComponent,
-      CounterSectionComponent,
-      HeroImageHeaderComponent,
-      TrophyImageComponent,
+      ...components,
+      ...views,
     ]),
     RouterModule.forChild(routes),
   ],
