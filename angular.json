@@ -56,8 +56,7 @@
               "src/assets/cohost/js/aos.js",
               "src/assets/cohost/js/jquery.animateNumber.min.js",
               "src/assets/cohost/js/bootstrap-datepicker.js",
-              "src/assets/cohost/js/scrollax.min.js",
-              "src/assets/cohost/js/google-map.js"
+              "src/assets/cohost/js/scrollax.min.js"
             ]
           },
           "configurations": {
