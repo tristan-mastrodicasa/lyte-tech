@@ -5,6 +5,7 @@ import { TextSectionComponent } from './text-section/text-section.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
 import { FeatureListComponent } from './feature-list/feature-list.component';
 import { ServicesListComponent } from './services-list/services-list.component';
+import { FocusPointsComponent } from './focus-points/focus-points.component';
 
 // tslint:disable:object-literal-key-quotes //
 export const mappedComponents = {
@@ -15,6 +16,7 @@ export const mappedComponents = {
   'home-banner': HomeBannerComponent,
   'feature-list': FeatureListComponent,
   'services-list': ServicesListComponent,
+  'focus-points': FocusPointsComponent,
 };
 
 export const components = [
@@ -25,4 +27,5 @@ export const components = [
   HomeBannerComponent,
   FeatureListComponent,
   ServicesListComponent,
+  FocusPointsComponent,
 ];
