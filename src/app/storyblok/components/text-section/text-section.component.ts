@@ -12,6 +12,7 @@ import { main } from 'assets/cohost/js/main';
 })
 export class TextSectionComponent extends StoryblokComponentAbstract implements OnInit {
 
+  @Input() public width: string;
   @Input() public body: any;
   public renderedBody: string;
 

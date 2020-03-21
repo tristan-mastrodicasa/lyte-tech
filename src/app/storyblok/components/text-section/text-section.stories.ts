@@ -22,6 +22,7 @@ export default {
 export const standard = () => ({
   component: TextSectionComponent,
   props: {
+    width: 'wide',
     body: {
       content: [
         { type: 'heading', attrs: { level: 2 }, content: [{ text: 'Hello world, I am a title', type: 'text' }] },
