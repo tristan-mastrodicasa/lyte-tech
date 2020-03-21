@@ -24,7 +24,9 @@
 </nav>
 <!-- END nav -->
 
-<router-outlet></router-outlet>
+<main [@routerAnimations]="routerState">
+  <router-outlet></router-outlet>
+</main>
 
 <footer class="mobile-tabs">
   <div class="container-fluid no-gutters d-print-none">
