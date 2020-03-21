@@ -4,6 +4,7 @@ import { CounterSectionComponent } from './counter-section/counter-section.compo
 import { TextSectionComponent } from './text-section/text-section.component';
 import { HomeBannerComponent } from './home-banner/home-banner.component';
 import { FeatureListComponent } from './feature-list/feature-list.component';
+import { ServicesListComponent } from './services-list/services-list.component';
 
 // tslint:disable:object-literal-key-quotes //
 export const mappedComponents = {
@@ -13,6 +14,7 @@ export const mappedComponents = {
   'text-section': TextSectionComponent,
   'home-banner': HomeBannerComponent,
   'feature-list': FeatureListComponent,
+  'services-list': ServicesListComponent,
 };
 
 export const components = [
@@ -22,4 +24,5 @@ export const components = [
   TextSectionComponent,
   HomeBannerComponent,
   FeatureListComponent,
+  ServicesListComponent,
 ];
