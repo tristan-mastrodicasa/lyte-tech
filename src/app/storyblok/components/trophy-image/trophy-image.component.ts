@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
+import { StoryblokService } from 'app/storyblok/storyblok.service';
 import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { main } from 'assets/cohost/js/main';
 
@@ -12,12 +13,12 @@ import { main } from 'assets/cohost/js/main';
 export class TrophyImageComponent extends StoryblokComponentAbstract implements OnInit {
 
   @Input() public _editable: any;
-  @Input() public title: string;
-  @Input() public description: string;
+  @Input() public description: any;
   @Input() public imageUrl: string;
   @Input() public imagePosition: 'left' | 'right';
+  public renderedDescription: string;
 
-  constructor() {
+  constructor(private storyblokService: StoryblokService) {
     super();
   }
 
@@ -25,6 +26,7 @@ export class TrophyImageComponent extends StoryblokComponentAbstract implements 
    * Initialize
    */
   public ngOnInit(): void {
+    this.renderedDescription = this.storyblokService.richTextResolver.render(this.description);
     main();
   }
 
