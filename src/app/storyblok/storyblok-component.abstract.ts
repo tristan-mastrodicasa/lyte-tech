@@ -12,7 +12,7 @@ export abstract class StoryblokComponentAbstract {
    */
   public getOptions() {
     if (typeof this._editable === 'undefined') {
-      return;
+      return {};
     }
 
     return JSON.parse(this._editable.replace('<!--#storyblok#', '').replace('-->', ''));

@@ -1,17 +1,7 @@
 import { TrophyImageComponent } from './trophy-image.component';
-import { StoryblokDirective } from 'app/storyblok/storyblok.directive';
-import { moduleMetadata } from '@storybook/angular';
 
 export default {
   title: 'Trophy Image',
-  decorators: [
-    moduleMetadata({
-      declarations: [
-        TrophyImageComponent,
-        StoryblokDirective,
-      ],
-    }),
-  ],
 };
 
 export const standard = () => ({

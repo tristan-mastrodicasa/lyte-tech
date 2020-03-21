@@ -31,7 +31,10 @@ export class AppComponent {
 
   constructor(public router: Router) {
 
-    // For every route change re-initialize the main JS file that initializes cohost javascript //
+    /**
+     * For every route change re-initialize the main JS file
+     * that initializes cohost javascript + change the animation state
+     */
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart) this.routerState = 'start';
       if (event instanceof NavigationEnd) {

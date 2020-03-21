@@ -1,17 +1,7 @@
 import { HeroImageHeaderComponent } from './hero-image-header.component';
-import { StoryblokDirective } from 'app/storyblok/storyblok.directive';
-import { moduleMetadata } from '@storybook/angular';
 
 export default {
   title: 'Hero Image Header',
-  decorators: [
-    moduleMetadata({
-      declarations: [
-        HeroImageHeaderComponent,
-        StoryblokDirective,
-      ],
-    }),
-  ],
 };
 
 export const standard = () => ({

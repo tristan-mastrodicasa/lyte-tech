@@ -1,17 +1,7 @@
 import { CounterSectionComponent } from './counter-section.component';
-import { StoryblokDirective } from 'app/storyblok/storyblok.directive';
-import { moduleMetadata } from '@storybook/angular';
 
 export default {
   title: 'Counter Section',
-  decorators: [
-    moduleMetadata({
-      declarations: [
-        CounterSectionComponent,
-        StoryblokDirective,
-      ],
-    }),
-  ],
 };
 
 const fourCounters = [
