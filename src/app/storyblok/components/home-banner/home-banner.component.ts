@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { main } from 'assets/cohost/js/main';
@@ -10,6 +10,8 @@ import { main } from 'assets/cohost/js/main';
   encapsulation: ViewEncapsulation.None,
 })
 export class HomeBannerComponent extends StoryblokComponentAbstract implements OnInit {
+
+  @Input() public imageUrl: string;
 
   constructor() {
     super();
