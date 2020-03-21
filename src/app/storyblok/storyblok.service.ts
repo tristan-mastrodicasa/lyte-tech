@@ -8,6 +8,9 @@ export class StoryblokService {
     accessToken: 'P1BI3QRkPDQWwKHVA9iGQQtt',
   });
 
+  // Expose the rich text resolver functionality //
+  public richTextResolver = this.sbClient.richTextResolver;
+
   constructor() { }
 
   /**
