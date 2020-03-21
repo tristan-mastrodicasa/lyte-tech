@@ -7,8 +7,8 @@ import { StoryblokService } from './storyblok.service';
 import { StoryblokResolverService } from './storyblok-resolver.service';
 import { StoryblokComponent } from './storyblok.component';
 
-import { components } from './components'; // Storyblok components
-import { views } from './views'; // Storyblok views
+import { components } from './components';
+import { views } from './views';
 
 const routes: Routes = [
   { path: '**', component: StoryblokComponent, resolve: { storyblok: StoryblokResolverService } },
