@@ -11,7 +11,7 @@ import { main } from 'assets/cohost/js/main';
 })
 export class HomeBannerComponent extends StoryblokComponentAbstract implements OnInit {
 
-  @Input() public imageUrl: string;
+  @Input() public assetUrl: string;
 
   constructor() {
     super();

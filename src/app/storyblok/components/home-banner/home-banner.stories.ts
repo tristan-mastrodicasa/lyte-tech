@@ -7,6 +7,6 @@ export default {
 export const standard = () => ({
   component: HomeBannerComponent,
   props: {
-    imageUrl: 'assets/img/graphics/add-to-home-screen.gif',
+    assetUrl: 'assets/img/graphics/add-to-home-screen-video.mp4',
   },
 });
