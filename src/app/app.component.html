@@ -17,29 +17,31 @@
     </div>
 
     <div class="ml-auto d-lg-none mobile-links">
-      <a href="mailto:tristan@lytetech.co.nz"><span class="ion-md-mail"></span></a>
-      <a href="tel://0211044886"><span class="ion-md-call ml-5"></span></a>
+      <a href="mailto:tristan@lytetech.co.nz"><ion-icon name="mail-sharp"></ion-icon></a>
+      <a href="tel://0211044886"><ion-icon name="call-sharp" class="margin-left-mobile-icon"></ion-icon></a>
     </div>
   </div>
 </nav>
 <!-- END nav -->
 
-<router-outlet></router-outlet>
+<main [@routerAnimations]="routerState">
+  <router-outlet></router-outlet>
+</main>
 
 <footer class="mobile-tabs">
   <div class="container-fluid no-gutters d-print-none">
     <div class="row mobile-fixed-nav d-lg-none">
-      <div routerLink="/" class="col pt-2 pb-2 border border-right-0 nuxt-link-exact-active nuxt-link-active">
-        <span class="ion-md-home l"></span>
+      <div routerLink="/" class="col border border-right-0 nuxt-link-exact-active nuxt-link-active">
+        <ion-icon name="home-sharp" class="l"></ion-icon>
       </div>
-      <div routerLink="/about" class="col pt-2 pb-2 border border-right-0 nuxt-link-exact-active nuxt-link-active">
-        <span class="ion-md-person l"></span>
+      <div routerLink="/about" class="col border border-right-0 nuxt-link-exact-active nuxt-link-active">
+        <ion-icon name="person-sharp" class="l"></ion-icon>
       </div>
-      <div routerLink="/services" class="col pt-2 pb-2 border border-right-0 nuxt-link-exact-active nuxt-link-active">
-        <span class="ion-md-briefcase l"></span>
+      <div routerLink="/services" class="col border border-right-0 nuxt-link-exact-active nuxt-link-active">
+        <ion-icon name="briefcase-sharp" class="l"></ion-icon>
       </div>
-      <div routerLink="/portfolio" class="col pt-2 pb-2 border border-right-0 nuxt-link-exact-active nuxt-link-active">
-        <span class="ion-md-albums l"></span>
+      <div routerLink="/portfolio" class="col border border-right-0 nuxt-link-exact-active nuxt-link-active">
+        <ion-icon name="albums-sharp" class="l"></ion-icon>
       </div>
     </div>
   </div>
@@ -118,4 +120,4 @@
 </footer>
 
 <!-- loader -->
-<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#3C99DC"/></svg></div>

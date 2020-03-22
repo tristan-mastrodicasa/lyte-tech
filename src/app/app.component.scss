@@ -7,23 +7,23 @@ footer.mobile-tabs {
   z-index: 100;
 }
 
-span.l {
+.margin-left-mobile-icon {
+  margin-left: 37px;
+}
+
+*.l {
   display: block;
   text-align: center;
   margin: 0 auto;
   font-size: 2em;
-  height: 37px;
+  height: 27px;
+  padding: 12px 0 !important;
   width: 100%;
-  fill: #22b9b6;
-
-  &:before {
-    position: relative;
-    top: -8px;
-  }
+  fill: #666;
 }
 
 .mobile-links {
   font-size: 2em;
   line-height: 1;
-  margin-bottom: -2px;
+  margin-bottom: -7px;
 }
