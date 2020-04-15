@@ -22,10 +22,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    DynamicModule.withComponents([
-      ...components,
-      ...views,
-    ]),
+    DynamicModule.forRoot(),
     RouterModule.forChild(routes),
   ],
   schemas: [
