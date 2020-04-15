@@ -1,6 +1,9 @@
 import { Input, HostBinding } from '@angular/core';
 
-export abstract class StoryblokComponentAbstract {
+/**
+ * Provides component functionality to deal with storyblok meta data
+ */
+export class StoryblokMetadata {
   @Input() public _editable: any;
 
   @HostBinding('style') get style() { return 'display: block;'; } // Allows storyblok to highlight the element

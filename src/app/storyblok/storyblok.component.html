@@ -1,6 +1,5 @@
 <div class="root-storyblok">
   <div *ngIf="story.content">
-    <ndc-dynamic [ndcDynamicComponent]="components[story.content.component]" [ndcDynamicInputs]="story.content">
-    </ndc-dynamic>
+    <lt-story [story]="story.content"></lt-story>
   </div>
 </div>

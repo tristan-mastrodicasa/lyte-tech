@@ -1,6 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { main } from 'assets/cohost/js/main';
 
 @Component({
@@ -9,15 +8,12 @@ import { main } from 'assets/cohost/js/main';
   styleUrls: ['./hero-image-header.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class HeroImageHeaderComponent extends StoryblokComponentAbstract implements OnInit {
+export class HeroImageHeaderComponent implements OnInit {
 
-  @Input() public _editable: any;
   @Input() public title: string;
   @Input() public imageUrl: string;
 
-  constructor() {
-    super();
-  }
+  constructor() { }
 
   /**
    * Initialize

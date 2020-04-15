@@ -1,6 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { main } from 'assets/cohost/js/main';
 
 @Component({
@@ -9,13 +8,11 @@ import { main } from 'assets/cohost/js/main';
   styleUrls: ['./home-banner.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class HomeBannerComponent extends StoryblokComponentAbstract implements OnInit {
+export class HomeBannerComponent implements OnInit {
 
   @Input() public assetUrl: string;
 
-  constructor() {
-    super();
-  }
+  constructor() { }
 
   /**
    * Initialize cohost javascript

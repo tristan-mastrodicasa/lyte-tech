@@ -1,6 +1,5 @@
 import { Component, Input, AfterViewInit, ViewEncapsulation } from '@angular/core';
 
-import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { main } from 'assets/cohost/js/main';
 
 @Component({
@@ -9,9 +8,8 @@ import { main } from 'assets/cohost/js/main';
   styleUrls: ['./counter-section.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class CounterSectionComponent extends StoryblokComponentAbstract implements AfterViewInit {
+export class CounterSectionComponent implements AfterViewInit {
 
-  @Input() public _editable: any;
   @Input() public title: string;
   @Input() public counters: {
     initialQuantity: number;
@@ -21,9 +19,7 @@ export class CounterSectionComponent extends StoryblokComponentAbstract implemen
     description: string;
   }[];
 
-  constructor() {
-    super();
-  }
+  constructor() { }
 
   /**
    * Initialize

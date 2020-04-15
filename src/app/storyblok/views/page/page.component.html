@@ -1,4 +1,3 @@
 <div *ngFor="let blok of body">
-  <ndc-dynamic [ndcDynamicComponent]="components[blok.component]" [ndcDynamicInputs]="blok">
-  </ndc-dynamic>
+  <lt-blok [blok]="blok"></lt-blok>
 </div>

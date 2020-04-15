@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { StoryblokComponentAbstract } from 'app/storyblok/storyblok-component.abstract';
 import { main } from 'assets/cohost/js/main';
 
 @Component({
@@ -9,11 +8,9 @@ import { main } from 'assets/cohost/js/main';
   styleUrls: ['./feature-list.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class FeatureListComponent extends StoryblokComponentAbstract implements OnInit {
+export class FeatureListComponent implements OnInit {
 
-  constructor() {
-    super();
-  }
+  constructor() { }
 
   /**
    * Initialize cohost js

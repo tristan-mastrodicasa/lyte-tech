@@ -6,6 +6,8 @@ import { DynamicModule } from 'ng-dynamic-component';
 import { StoryblokService } from './storyblok.service';
 import { StoryblokResolverService } from './storyblok-resolver.service';
 import { StoryblokComponent } from './storyblok.component';
+import { BlokComponent } from './components/blok/blok.component';
+import { StoryComponent } from './views/story/story.component';
 
 import { components } from './components';
 import { views } from './views';
@@ -17,6 +19,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     StoryblokComponent,
+    BlokComponent,
+    StoryComponent,
     ...components,
     ...views,
   ],
