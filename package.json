@@ -4,6 +4,8 @@
   "scripts": {
     "deploy:stage": "ng build --prod && firebase deploy -P stage",
     "deploy:live": "ng build --prod && firebase deploy -P live",
+    "build:stats": "ng build --stats-json",
+    "analyze:es2015": "webpack-bundle-analyzer dist/lyte-tech/stats-es2015.json",
     "storybook": "start-storybook"
   },
   "private": true,
@@ -54,6 +56,7 @@
     "tslint": "~5.18.0",
     "tslint-config-airbnb": "^5.11.2",
     "tslint-microsoft-contrib": "^6.2.0",
-    "typescript": "~3.7.5"
+    "typescript": "~3.7.5",
+    "webpack-bundle-analyzer": "^3.7.0"
   }
 }
