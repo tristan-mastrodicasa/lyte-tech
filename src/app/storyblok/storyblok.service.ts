@@ -6,6 +6,7 @@ export class StoryblokService {
 
   private sbClient = new storyblokJsClient({
     accessToken: 'P1BI3QRkPDQWwKHVA9iGQQtt',
+    cache: { type: 'memory', clear: 'auto' },
   });
 
   // Expose the rich text resolver functionality //
