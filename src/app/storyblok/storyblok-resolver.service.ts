@@ -11,12 +11,20 @@ export class StoryblokResolverService implements Resolve<any> {
   /**
    * Get data from story block
    */
-  public async resolve(_route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<any> {
+  public async resolve(_route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     let version = 'published';
     const storyblok: any = window.storyblok;
 
     if (storyblok.inIframe()) version = 'draft';
 
-    return this.storyblokService.getStory(state.url.substring(1) || 'index', { version });
+    let data: any;
+
+    try {
+      data = await this.storyblokService.getStory(state.url.substring(1) || 'index', { version });
+    } catch (e) {
+      data = await this.storyblokService.getStory('not-found', { version });
+    }
+
+    return data;
   }
 }
