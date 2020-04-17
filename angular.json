@@ -29,6 +29,11 @@
               "src/manifest.webmanifest",
               "src/robots.txt"
             ],
+            "stylePreprocessorOptions": {
+               "includePaths": [
+                 "src/styles"
+               ]
+             },
             "styles": [
               "src/global.scss",
               "src/assets/cohost/css/open-iconic-bootstrap.min.css",

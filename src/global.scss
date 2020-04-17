@@ -1,2 +1,9 @@
-// CoHost template Styles //
+// Frameworks //
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+
+// Fonts //
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1&amp;display=swap');
+
+@import "./styles/base/typography";
+
 @import './styles/cohost/style';
