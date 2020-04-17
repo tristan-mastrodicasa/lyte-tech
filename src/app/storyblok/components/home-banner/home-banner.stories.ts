@@ -1,13 +1,13 @@
 import { HomeBannerComponent } from './home-banner.component';
 import { moduleMetadata } from '@storybook/angular';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 export default {
   title: 'Home Banner',
   decorators: [
     moduleMetadata({
       schemas: [
-        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA,
       ],
     }),
   ],
