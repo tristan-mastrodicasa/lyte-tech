@@ -4,8 +4,7 @@
   "scripts": {
     "deploy:stage": "ng build --prod && firebase deploy -P stage",
     "deploy:live": "ng build --prod && firebase deploy -P live",
-    "build:stats": "ng build --stats-json",
-    "analyze:es2015": "webpack-bundle-analyzer dist/lyte-tech/stats-es2015.json",
+    "analyze:es2015": "ng build --stats-json && webpack-bundle-analyzer dist/lyte-tech/stats-es2015.json",
     "storybook": "start-storybook"
   },
   "private": true,
