@@ -4,6 +4,7 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAnalyticsModule, COLLECTION_ENABLED } from '@angular/fire/analytics';
 
+import { StoryblokModule } from './storyblok/storyblok.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -17,6 +18,7 @@ import { firebaseConfig } from './configs/firebase-config';
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
+    StoryblokModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAnalyticsModule,

@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'lt-storyblok',
@@ -25,7 +24,7 @@ export class StoryblokComponent implements OnInit {
    * Find initialize component
    */
   public ngOnInit() {
-    this.route.data.pipe(first()).subscribe((data) => {
+    this.route.data.subscribe((data) => {
       this.story = data.storyblok.story;
     });
   }
