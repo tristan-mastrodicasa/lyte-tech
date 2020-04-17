@@ -1,7 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { main } from 'assets/cohost/js/main';
-
 @Component({
   selector: 'lt-services-list',
   templateUrl: './services-list.component.html',
@@ -13,10 +11,8 @@ export class ServicesListComponent implements OnInit {
   constructor() { }
 
   /**
-   * Initialize cohost javascript
+   * Initialize
    */
-  public ngOnInit(): void {
-    main();
-  }
+  public ngOnInit(): void { }
 
 }

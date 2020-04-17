@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 import { StoryblokService } from 'app/storyblok/storyblok.service';
-import { main } from 'assets/cohost/js/main';
 
 @Component({
   selector: 'lt-text-section',
@@ -22,7 +21,6 @@ export class TextSectionComponent implements OnInit {
    */
   public ngOnInit(): void {
     this.renderedBody = this.storyblokService.richTextResolver.render(this.body);
-    main();
   }
 
 }

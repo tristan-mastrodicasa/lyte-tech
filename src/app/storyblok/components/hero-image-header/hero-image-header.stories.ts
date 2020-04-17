@@ -1,7 +1,16 @@
 import { HeroImageHeaderComponent } from './hero-image-header.component';
+import { moduleMetadata } from '@storybook/angular';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 export default {
   title: 'Hero Image Header',
+  decorators: [
+    moduleMetadata({
+      schemas: [
+        CUSTOM_ELEMENTS_SCHEMA,
+      ],
+    }),
+  ],
 };
 
 export const standard = () => ({

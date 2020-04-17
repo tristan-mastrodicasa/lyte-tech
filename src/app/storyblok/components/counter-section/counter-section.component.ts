@@ -1,7 +1,5 @@
 import { Component, Input, AfterViewInit, ViewEncapsulation } from '@angular/core';
 
-import { main } from 'assets/cohost/js/main';
-
 @Component({
   selector: 'lt-counter-section',
   templateUrl: './counter-section.component.html',
@@ -24,8 +22,6 @@ export class CounterSectionComponent implements AfterViewInit {
   /**
    * Initialize
    */
-  public ngAfterViewInit(): void {
-    main();
-  }
+  public ngAfterViewInit(): void { }
 
 }

@@ -36,20 +36,8 @@
              },
             "styles": [
               "src/global.scss",
-              "src/assets/cohost/css/open-iconic-bootstrap.min.css",
-              "src/assets/cohost/css/animate.css",
-              "src/assets/cohost/css/aos.css"
             ],
-            "scripts": [
-              "src/assets/cohost/js/jquery.min.js",
-              "src/assets/cohost/js/jquery-migrate-3.0.1.min.js",
-              "src/assets/cohost/js/bootstrap.min.js",
-              "src/assets/cohost/js/jquery.waypoints.min.js",
-              "src/assets/cohost/js/jquery.stellar.min.js",
-              "src/assets/cohost/js/aos.js",
-              "src/assets/cohost/js/jquery.animateNumber.min.js",
-              "src/assets/cohost/js/scrollax.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

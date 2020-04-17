@@ -1,7 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { main } from 'assets/cohost/js/main';
-
 @Component({
   selector: 'lt-hero-image-header',
   templateUrl: './hero-image-header.component.html',
@@ -18,8 +16,6 @@ export class HeroImageHeaderComponent implements OnInit {
   /**
    * Initialize
    */
-  public ngOnInit(): void {
-    main();
-  }
+  public ngOnInit() {}
 
 }

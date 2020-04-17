@@ -1,7 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { main } from 'assets/cohost/js/main';
-
 @Component({
   selector: 'lt-home-banner',
   templateUrl: './home-banner.component.html',
@@ -15,10 +13,8 @@ export class HomeBannerComponent implements OnInit {
   constructor() { }
 
   /**
-   * Initialize cohost javascript
+   * Initialize
    */
-  public ngOnInit(): void {
-    main();
-  }
+  public ngOnInit() { }
 
 }

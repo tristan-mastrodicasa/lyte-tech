@@ -1,7 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
-import { main } from 'assets/cohost/js/main';
-
 @Component({
   selector: 'lt-focus-points',
   templateUrl: './focus-points.component.html',
@@ -13,10 +11,8 @@ export class FocusPointsComponent implements OnInit {
   constructor() { }
 
   /**
-   * Initialize js from cohost
+   * Initialize
    */
-  public ngOnInit(): void {
-    main();
-  }
+  public ngOnInit() {}
 
 }

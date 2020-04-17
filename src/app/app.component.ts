@@ -1,8 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 import { trigger, transition, style, query, animate, state } from '@angular/animations';
-
-import { main } from 'assets/cohost/js/main';
 
 @Component({
   selector: 'lt-root',
@@ -27,6 +25,7 @@ import { main } from 'assets/cohost/js/main';
 })
 export class AppComponent {
 
+  @ViewChild('loader') public loader: ElementRef;
   public routerState: 'start' | 'end' = 'end';
 
   constructor(public router: Router) {
@@ -38,8 +37,8 @@ export class AppComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart) this.routerState = 'start';
       if (event instanceof NavigationEnd) {
+        this.loader.nativeElement.style.display = 'none';
         this.routerState = 'end';
-        main();
       }
     });
 

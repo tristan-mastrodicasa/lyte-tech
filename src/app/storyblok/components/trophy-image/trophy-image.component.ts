@@ -1,7 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { StoryblokService } from 'app/storyblok/storyblok.service';
-import { main } from 'assets/cohost/js/main';
 
 @Component({
   selector: 'lt-trophy-image',
@@ -23,7 +22,6 @@ export class TrophyImageComponent implements OnInit {
    */
   public ngOnInit(): void {
     this.renderedDescription = this.storyblokService.richTextResolver.render(this.description);
-    main();
   }
 
 }
