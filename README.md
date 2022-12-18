@@ -1,5 +1,7 @@
 # LyteTech
 
+![Info Pages Preview](/docs/lyte-tech-screenshot.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
 ## Development server
